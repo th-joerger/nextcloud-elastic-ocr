@@ -2,5 +2,5 @@
 
 # Update to wanted version here and in Dockerfile
 
-sudo docker build --tag thorjoerger/nextcloud:27.1.8 .
-sudo docker push thorjoerger/nextcloud:27.1.8
+sudo docker build --tag thorjoerger/nextcloud:28.0.4 .
+sudo docker push thorjoerger/nextcloud:28.0.4
