@@ -1,4 +1,4 @@
-FROM elasticsearch:7.17.27
+FROM elasticsearch:7.17.28
 RUN /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch ingest-attachment
 RUN apt-get update
 RUN apt-get upgrade -y
