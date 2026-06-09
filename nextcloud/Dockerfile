@@ -1,4 +1,4 @@
-FROM nextcloud:33.0.3
+FROM nextcloud:33.0.5
 RUN apt-get update
 RUN apt-get install -y ghostscript
 RUN apt install -y libmagickwand-dev --no-install-recommends
