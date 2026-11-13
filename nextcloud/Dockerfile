@@ -1,7 +1,6 @@
 FROM nextcloud:35.0.2
-RUN apt-get update
-RUN apt-get install -y ghostscript
-RUN apt install -y libmagickwand-dev --no-install-recommends
-RUN pecl install imagick; exit 0
-RUN docker-php-ext-enable imagick
-RUN rm -rf /var/lib/apt/lists/*
+# The official image ships imagick (pecl) itself; the only addition is ghostscript (PDF previews).
+# One layer, and a failing install fails the build.
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ghostscript \
+ && rm -rf /var/lib/apt/lists/*

@@ -1,3 +1,3 @@
-# Nextcloud Elastic
+# nextcloud-elastic
 
-Docker-Files with customizations for elastic search and OCR. Build-Script for publishing created docker images to docker registry.
+Build files for a Nextcloud Docker image: the official `nextcloud` image plus ghostscript (`nextcloud/Dockerfile`, `nextcloud/build.sh`).
